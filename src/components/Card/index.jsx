@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.css";
 
-const Card = () => {
+const Card = ({ name, img }) => {
   return (
     <div className="cardContainer">
       <div className="imgContainer">
-        <img src="" alt="" />
+        <img src={img} alt="" />
       </div>
-      <p>name</p>
+      <p>{name}</p>
     </div>
   );
 };
