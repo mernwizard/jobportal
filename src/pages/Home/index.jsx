@@ -11,7 +11,7 @@ const Home = () => {
   const [filteredUserData, setFilteredUserData] = useState();
   useEffect(() => {
     const filteredData = userData.filter((data) =>
-      data.name.includes(userName)
+      data.name.toLowerCase().includes(userName.toLowerCase())
     );
     setFilteredUserData(filteredData);
   }, [userName, userData]);
