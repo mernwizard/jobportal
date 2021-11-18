@@ -26,15 +26,21 @@ const Home = () => {
           onChange={(e) => setUserName(e.target.value)}
         />
       </div>
-      <div className="CardsContainer">
-        {filteredUserData?.map((user) => {
-          return (
-            <div key={user.id} onClick={() => history.push(`/${user.id}`)}>
-              <Card id={user.id} name={user.name} img={user.Image} />
-            </div>
-          );
-        })}
-      </div>
+      {filteredUserData.length !== 0 ? (
+        <div className="CardsContainer">
+          <>
+            {filteredUserData?.map((user) => {
+              return (
+                <div key={user.id} onClick={() => history.push(`/${user.id}`)}>
+                  <Card id={user.id} name={user.name} img={user.Image} />
+                </div>
+              );
+            })}
+          </>
+        </div>
+      ) : (
+        <div className="noDataContainer">No Data Found&nbsp; :(</div>
+      )}
     </>
   );
 };
