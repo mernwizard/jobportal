@@ -11,8 +11,8 @@ const SingleUser = (props) => {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    setUser(userData.filter((data) => data.id === match.params.id));
     if (userData.length > 0) {
+      setUser(userData.filter((data) => data.id === match.params.id));
     }
   }, [match.params.id, userData]);
 
