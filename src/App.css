@@ -17,6 +17,22 @@
   pointer-events: none;
 }
 
+.CardsContainer{
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    background-color: #F8F9FA;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.noDataContainer{
+  margin-top: 10rem;
+  font-size: 1.5rem;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
