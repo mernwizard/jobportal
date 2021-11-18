@@ -7,13 +7,17 @@ const Nav = () => {
     <nav>
       <div className="Header">
         <h1>Logo</h1>
-        <NavLink to="/" className="link">
+        <NavLink exact to="/" className="link" activeClassName="activeLink">
           Home
         </NavLink>
-        <NavLink to="/shortlisted" className="link">
+        <NavLink
+          to="/shortlisted"
+          className="link"
+          activeClassName="activeLink"
+        >
           Shortlisted
         </NavLink>
-        <NavLink to="/rejected" className="link">
+        <NavLink to="/rejected" className="link" activeClassName="activeLink">
           Rejected
         </NavLink>
       </div>

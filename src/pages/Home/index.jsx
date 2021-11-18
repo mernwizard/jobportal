@@ -10,7 +10,6 @@ const Home = () => {
   const [userName, setUserName] = useState("");
   const [filteredUserData, setFilteredUserData] = useState();
   useEffect(() => {
-    console.log("running");
     const filteredData = userData.filter((data) =>
       data.name.includes(userName)
     );
@@ -26,7 +25,7 @@ const Home = () => {
           onChange={(e) => setUserName(e.target.value)}
         />
       </div>
-      {filteredUserData.length !== 0 ? (
+      {filteredUserData?.length !== 0 ? (
         <div className="CardsContainer">
           <>
             {filteredUserData?.map((user) => {

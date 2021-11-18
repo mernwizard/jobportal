@@ -14,9 +14,10 @@ nav{
     justify-content: space-around;
     height: 100%;
     width: 40%;
+    color: black;
 }
 
 .Header .link{
     text-decoration: none;
-    color: inherit;
 }
+
