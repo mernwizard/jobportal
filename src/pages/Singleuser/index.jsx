@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { UserContext } from "../../userContext";
 import "./index.css";
 
 const SingleUser = (props) => {
   const { match } = props;
-  const [currentUserId, setCurrentUserId] = useState(null);
+  const { userData } = useContext(UserContext);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
-    setCurrentUserId(match.params.id);
+    if (userData.length > 0) {
+      setUser(userData.filter((data) => data.id === match.params.id));
+    }
   }, []);
 
   return (
     <div className="singleUserContainer">
       <div className="imgContainer">
-        <img src="" alt="" />
+        <img src={user[0]?.Image} alt="" />
       </div>
       <div className="detailsContainer"></div>
     </div>

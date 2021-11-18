@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const UserContext = createContext(null);
 
 export default function UserProvider(props) {
-  const [userData, setUserData] = useState(false);
+  const [userData, setUserData] = useState([]);
 
   return (
     <UserContext.Provider
