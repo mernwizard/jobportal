@@ -6,7 +6,7 @@ const Card = ({ name, img, id }) => {
   const history = useHistory();
   return (
     <div className="cardContainer" onClick={() => history.push(`/${id}`)}>
-      <div className="imgContainer">
+      <div>
         <img src={img} alt="" />
       </div>
       <p>{name}</p>

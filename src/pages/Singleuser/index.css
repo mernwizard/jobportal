@@ -9,10 +9,64 @@
     transition: transform 200ms linear;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    position: relative;
 }
 
 .imgContainer{
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+
+.imgContainer p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .detailsContainer{
+
+}
+
+.detailsContainer ul{
+    list-style-type: none;
+    text-align: left;
+    height: 100%;
+    padding: 2rem;
+}
+
+.detailsContainer li{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.btnContainer{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.btn{
+    height: 3rem;
+    width: 10rem;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin:1rem;
+}
+.shortListBtn{
+    background: green;
+}
+.rejectBtn{
+    background: red;
 }

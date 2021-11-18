@@ -17,8 +17,21 @@ const SingleUser = (props) => {
     <div className="singleUserContainer">
       <div className="imgContainer">
         <img src={user[0]?.Image} alt="" />
+        <p>{user[0]?.name}</p>
       </div>
-      <div className="detailsContainer"></div>
+      <div className="detailsContainer">
+        <ul>
+          <li>Skills:</li>
+          <li>Experience:</li>
+          <li>Projects:</li>
+          <li>Education</li>
+
+          <div className="btnContainer">
+            <button className="shortListBtn btn">Shortlist</button>
+            <button className="rejectBtn btn">Reject</button>
+          </div>
+        </ul>
+      </div>
     </div>
   );
 };
