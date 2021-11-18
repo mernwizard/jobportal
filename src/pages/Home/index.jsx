@@ -26,7 +26,9 @@ const Home = () => {
   return (
     <div className="CardsContainer">
       {userData?.map((user) => {
-        return <Card key={user.id} name={user.name} img={user.Image} />;
+        return (
+          <Card key={user.id} id={user.id} name={user.name} img={user.Image} />
+        );
       })}
     </div>
   );

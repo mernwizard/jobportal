@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../../pages/Home";
 import Rejected from "../../pages/Rejected";
 import ShortListed from "../../pages/Shortlisted";
+import SingleUser from "../../pages/Singleuser";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
         <Route exact path="/" component={Home} />
         <Route path="/shortlisted" component={ShortListed} />
         <Route path="/rejected" component={Rejected} />
+        <Route path="/:id" component={SingleUser} />
       </Switch>
     </>
   );
