@@ -14,7 +14,7 @@ const SingleUser = (props) => {
     setUser(userData.filter((data) => data.id === match.params.id));
     if (userData.length > 0) {
     }
-  }, []);
+  }, [match.params.id, userData]);
 
   const handleShortlist = async (data) => {
     await setShortlisted([...shortlisted, data[0]]);

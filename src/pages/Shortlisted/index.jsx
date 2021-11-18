@@ -4,7 +4,6 @@ import { UserContext } from "../../userContext";
 
 const ShortListed = () => {
   const { shortlisted } = useContext(UserContext);
-  console.log(shortlisted);
 
   return (
     <>

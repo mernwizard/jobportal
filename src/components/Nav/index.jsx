@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="Header">
-        <h1>Logo</h1>
+        <h1>LOGO</h1>
         <NavLink exact to="/" className="link" activeClassName="activeLink">
           Home
         </NavLink>
