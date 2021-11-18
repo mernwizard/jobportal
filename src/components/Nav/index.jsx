@@ -11,7 +11,7 @@ const Nav = () => {
           Home
         </NavLink>
         <NavLink to="/shortlisted" className="link">
-          ShortListed
+          Shortlisted
         </NavLink>
         <NavLink to="/rejected" className="link">
           Rejected
